@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreateTraining"
+        android:layout_width="305dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/green"
+        android:text="Twórz nowy trening"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTrainingList"
+        android:layout_width="305dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/green"
+        android:text="Lista treningów"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlayerAttendance" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlayerAttendance"
+        android:layout_width="305dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/green"
+        android:text="Zaznacz obecność"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateTraining" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
